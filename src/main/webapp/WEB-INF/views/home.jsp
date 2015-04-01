@@ -367,7 +367,7 @@
 				<a id="validateNoErrors" class="textLink" href="<c:url value="/validate?number=3&date=2029-07-04" />">Validate, no errors</a>
 			</li>
 			<li>
-				<a id="validateErrors" class="textLink" href="<c:url value="/validate?number=3&date=2010-07-01" />">Validate, errors</a>
+				<a id="validateErrors" class="textLink" href="<c:url value="/validate?number=8&date=2010-07-01" />">Validate, errors</a>
 			</li>
 		</ul>	
 	</div>
