@@ -4,6 +4,7 @@ import java.util.Date;
 
 // import javax.validation.constraints.Future;
 import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -13,6 +14,7 @@ public class JavaBean {
 	
 	@NotNull
 	@Max(5)
+        @Min(0)
 	private Integer number;
 
 	@NotNull
