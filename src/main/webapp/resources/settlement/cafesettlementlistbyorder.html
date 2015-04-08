@@ -18,22 +18,21 @@ and open the template in the editor.
         
         <br />
 
+        
         <div class="panel panel-default">
-            <table class="table table-condensed">
+            <table class="table">
                 <tbody>
                   <tr>
                     <th class="bg-info">餐厅名称</th>
-                    <td>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="餐厅名称" value='测试餐厅A' aria-describedby="basic-addon1">
-                        </div>
-                    </td>
+                    <td>测试餐厅A</td>
                     
-                    <td><div class="input-group">&nbsp;</div></td>
-                    <td><div class="input-group">&nbsp;</div></td>
+                    <th class="bg-info">联系人</th>
+                    <td>测试餐厅人B</td>
+                    
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                   </tr>
-                  <tr>
-                    <th class="bg-info">开始时间</th>
+                  <th class="bg-info">开始时间</th>
                     <td>
                                 <div class="input-group">
                                         <input type="text" class="form-control" placeholder="开始时间">
@@ -46,8 +45,6 @@ and open the template in the editor.
                               </div>
                        
                     </td>
-                    
-                  </tr>
                 </tbody>
             </table>
         </div>
@@ -55,56 +52,59 @@ and open the template in the editor.
         <div class="bs-example" data-example-id="panel-without-body-with-table">
         <div class="panel panel-default">
           <!-- Default panel contents -->
-          <div class="panel-heading">账单列表</div>
+          <div class="panel-heading">
+              <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">全部</a></li>
+              <li role="presentation"><a href="#">已完成账单</a></li>
+              <li role="presentation"><a href="#">处理中账单</a></li>
+            </ul>
+          </div>
 
           <!-- Table -->
           <table class="table">
             <thead>
               <tr>
                 <th>#</th>
-                <th>账单日期</th>
-                <th>预付订单金额</th>
-                <th>预付付退款</th>
-                <th>现付订单</th>
-                <th>现付付退款</th>
-                <th>调整款</th>
-                <th>总金额</th>
+                <th>订单号</th>
+                <th>订单名称</th>
+                <th>预定时间</th>
+                <th>订单金额</th>
+                <th>结算金额</th>
                 <th>状态</th>
+                <th>操作</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td><a href="settlementview.html">TESTA20150330</a></td>
-                <td>100</td>
+                <td><a href="cafesettlementviewbyorder.html">TESTA201503300040</a></td>
+                <td>鸡排饭</td>
+                <td>2015-03-30 12:31:00</td>
                 <td>20</td>
-                <td>40</td>
-                <td>10</td>
                 <td>30</td>
-                <td>140</td>
                 <td>已付款</td>
+                <td></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td><a href="settlementview.html">TESTA20150331</a></td>
-                <td>100</td>
-                <td>20</td>
-                <td>40</td>
+                <td><a href="cafesettlementviewbyorder.html">TESTA201503300040</a></td>
+                <td>大排饭</td>
+                <td>2015-03-30 12:35:00</td>
                 <td>10</td>
-                <td>30</td>
-                <td>140</td>
-                <td>已确认</td>
+                <td>15</td>
+                <td>已付款</td>
+                <td></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td><a href="settlementview.html">TESTA20150401</a></td>
-                <td>100</td>
-                <td>20</td>
-                <td>40</td>
-                <td>10</td>
+                <td><a href="settlementview.html">SAAS201504</a></td>
+                <td>4月份费用</td>
+                <td>2015-03-30 12:35:00</td>
                 <td>30</td>
-                <td>140</td>
-                <td>待确认</td>
+                <td>－30</td>
+                <td>未付</td>
+                <td><input type="button" class="btn btn-info btn-sm" value="支付" /></td>
+                
               </tr>
             </tbody>
           </table>
